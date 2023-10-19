@@ -115,7 +115,6 @@ async function run() {
           price:product.price,
           image:product.image,
           description:product.description,
-          brandImage:product.brandImage,
         },
       };
       const result = await productsCollection.updateOne(filter, updateDoc, options)
