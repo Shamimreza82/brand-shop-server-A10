@@ -31,6 +31,7 @@ async function run() {
 
     const productsCollection = client.db("productsDB").collection("products")
     const cartCollection = client.db("cartDB").collection("cart")
+    const brandCollection = client.db("brand-image").collection("image")
     
 
     app.post('/products', async (req, res) => {
